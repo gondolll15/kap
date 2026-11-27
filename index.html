@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#102D50">
+
+    <title>KAP.id</title>
+
+    <meta name="description"
+        content="KAP - Kenyamanan Anda Adalah Prioritas Kami">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <!-- =========================================
+     KAP PREMIUM LOADING SCREEN
+========================================= -->
+
+<!-- LOADING SCREEN -->
+<div class="loader" id="loader">
+
+    <div class="loader-content">
+
+        <img
+            src="kap.png"
+            alt="KAP Logo"
+            class="loader-logo"
+        >
+
+        <div class="loader-progress">
+            <div class="loader-progress-bar"></div>
+        </div>
+
+        <p class="loader-credit">SATU JIWO SATU NYALI</p>
+
+    </div>
+
+</div>
+
+
+    <!-- =====================================
+         MAIN WEBSITE
+    ====================================== -->
+
+    <div class="website" id="website">
+
+
+        <!-- =====================================
+             NAVIGATION
+        ====================================== -->
+
+        <header class="navbar">
+
+            <div class="nav-container">
+
+                <a href="#home" class="nav-brand">
+
+                    <img src="ka.png" alt="KAP Logo">
+
+                    <div class="brand-text">
+                        <strong>PT KAP</strong>
+                        <span>KERETA API PRATAMA</span>
+                    </div>
+
+                </a>
+
+
+                <button class="nav-toggle" id="navToggle"
+                    aria-label="Buka menu navigasi">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+
+                <nav class="nav-menu" id="navMenu">
+
+                    <a href="#home" class="active">Beranda</a>
+
+                    <a href="#booking">Pesan Tiket</a>
+
+                    <a href="#routes">Rute Kereta</a>
+
+                    <a href="#gallery">Galeri</a>
+
+                    <a href="#about">Tentang Kami</a>
+
+                    <a href="#booking" class="nav-booking">
+                        Pesan Sekarang
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================
+             HERO / HOME
+        ====================================== -->
+
+        <main>
+
+            <section class="hero-section" id="home">
+
+                <div class="hero-background">
+
+                    <img src="1.jpeg"
+                        alt="Kereta api KAP">
+
+                </div>
+
+
+                <div class="hero-overlay"></div>
+
+
+                <div class="hero-container">
+
+                    <div class="hero-content">
+
+                        <span class="hero-label">
+                            WELCOME TO KAP RAILWAY
+                        </span>
+
+                        <h1>
+                            YOUR SAFETY IS<br>
+                            <span>OUR PRIORITY</span>
+                        </h1>
+
+                        <p>
+                            Nikmati perjalanan yang nyaman aman
+                            dan menyenangkan bersama KAP
+                            Karena kenyamanan Anda adalah prioritas kami.
+                        </p>
+
+
+                        <div class="hero-buttons">
+
+                            <a href="#booking" class="btn-primary">
+                                Pesan Tiket
+                                <span></span>
+                            </a>
+
+                            <a href="#about" class="btn-outline">
+                                Tentang Kami
+                            </a>
+
+                        </div>
+
+
+                        <div class="hero-features">
+
+                            <div class="hero-feature">
+                                <span>✦</span>
+                                <p>Perjalanan Nyaman</p>
+                            </div>
+
+                            <div class="hero-feature">
+                                <span>✦</span>
+                                <p>Pelayanan Terbaik</p>
+                            </div>
+
+                            <div class="hero-feature">
+                                <span>✦</span>
+                                <p>Pesan Lebih Mudah</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    
+
+                    
+
+                </div>
+
+
+                <div class="hero-bottom">
+
+                    <span>DISCOVER YOUR NEXT DESTINATION</span>
+
+                    <a href="#booking">SCROLL TO EXPLORE ↓</a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 BOOKING SECTION
+            ====================================== -->
+
+            <section class="content-section booking-section"
+                id="booking">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        BOOK YOUR JOURNEY
+                    </span>
+
+                    <h2>
+                        Pesan Tiket <b>Kereta</b>
+                    </h2>
+
+                    <p>
+                        Temukan perjalanan terbaik dan pilih jadwal
+                        kereta sesuai kebutuhan Anda
+                    </p>
+
+                </div>
+
+
+                <div class="booking-wrapper">
+
+                    <form class="booking-form" id="bookingForm">
+
+                        <div class="booking-form-header">
+
+                            <div>
+                                <span>PLAN YOUR TRIP</span>
+                                <h3>Where do you want to go?</h3>
+                            </div>
+
+                           
+
+                        </div>
+
+
+                        <div class="station-fields">
+
+                            <div class="form-group">
+
+                                <label for="origin">
+                                    Stasiun Asal
+                                </label>
+
+                                <select id="origin" required>
+
+                                    <option value="">
+                                        Pilih stasiun asal
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <button type="button"
+                                class="swap-stations"
+                                id="swapStations"
+                                aria-label="Tukar stasiun">
+
+                                ⇄
+
+                            </button>
+
+
+                            <div class="form-group">
+
+                                <label for="destination">
+                                    Stasiun Tujuan
+                                </label>
+
+                                <select id="destination" required>
+
+                                    <option value="">
+                                        Pilih stasiun tujuan
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="booking-extra-fields">
+
+                            <div class="form-group">
+
+                                <label for="travelDate">
+                                    Tanggal Keberangkatan
+                                </label>
+
+                                <input type="date"
+                                    id="travelDate"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="passengers">
+                                    Jumlah Penumpang
+                                </label>
+
+                                <select id="passengers" required>
+
+                                    <option value="1">1 Penumpang</option>
+                                    <option value="2">2 Penumpang</option>
+                                    <option value="3">3 Penumpang</option>
+                                    <option value="4">4 Penumpang</option>
+                                    <option value="5">5 Penumpang</option>
+                                    <option value="6">6 Penumpang</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="submit" class="booking-submit">
+
+                            <span></span>
+                            Cari Tiket Kereta
+
+                        </button>
+
+
+                        <p class="booking-note">
+                            * Selalu Perhatikan Jadwal Kereta Anda Dengan Benar, Kami Membuat Perjalananmu Menyenangkan.
+                        </p>
+
+                    </form>
+
+
+                    <!-- SEARCH RESULTS -->
+
+                    <div id="searchResults"></div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 ROUTES SECTION
+            ====================================== -->
+
+            <section class="content-section routes-section"
+                id="routes">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        EXPLORE DESTINATIONS
+                    </span>
+
+                    <h2>
+                        Jelajahi <b>Rute Kami</b>
+                    </h2>
+
+                    <p>
+                        Temukan berbagai pilihan rute perjalanan
+                        bersama KAP
+                    </p>
+
+                </div>
+
+
+                <div class="route-tools">
+
+                    <div class="route-search">
+
+                        <span>⌕</span>
+
+                        <input type="search"
+                            id="routeSearch"
+                            placeholder="Cari stasiun atau tujuan...">
+
+                    </div>
+
+                </div>
+
+
+                <div class="route-grid" id="routeGrid">
+
+                    <!-- Rute dibuat otomatis oleh routes.js -->
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 GALLERY SECTION
+            ====================================== -->
+
+            <section class="content-section gallery-section"
+                id="gallery">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        KAP MOMENTS
+                    </span>
+
+                    <h2>
+                        Galeri <b>Perjalanan</b>
+                    </h2>
+
+                    <p>
+                        Lihat lebih dekat suasana perjalanan dan
+                        fasilitas yang kami hadirkan.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid" id="galleryGrid">
+
+                    <div class="gallery-item">
+
+                        <img src="11.jpeg"
+                            alt="Stasiun kereta">
+
+                        <div class="gallery-overlay">
+                            <span></span>
+                            <h3>Railway Station</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img src="22.jpeg"
+                            alt="Peron stasiun">
+
+                        <div class="gallery-overlay">
+                            <span></span>
+                            <h3>Waiting Platform</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img src="33.jpeg"
+                            alt="Interior kereta">
+
+                        <div class="gallery-overlay">
+                            <span></span>
+                            <h3>Comfortable Interior</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img src="44.jpeg"
+                            alt="Eksterior kereta">
+
+                        <div class="gallery-overlay">
+                            <span></span>
+                            <h3>Modern Train</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img src="55.jpeg"
+                            alt="Pemandangan jalur kereta">
+
+                        <div class="gallery-overlay">
+                            <span></span>
+                            <h3>Beautiful Journey</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img src="66.jpeg"
+                            alt="Pelayanan penumpang">
+
+                        <div class="gallery-overlay">
+                            <span></span>
+                            <h3>Passenger Service</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GALLERY LIGHTBOX -->
+
+                <div class="gallery-lightbox"
+                    id="galleryLightbox">
+
+                    <button class="lightbox-close"
+                        id="lightboxClose"
+                        aria-label="Tutup galeri">
+
+                        ×
+
+                    </button>
+
+
+                    <div class="lightbox-content">
+
+                        <img src=""
+                            id="lightboxImage"
+                            alt="Foto galeri KAP">
+
+                        <div class="lightbox-caption"
+                            id="lightboxCaption"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 ABOUT SECTION
+            ====================================== -->
+
+            <section class="content-section about-section"
+                id="about">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        
+                    </span>
+
+                    <h2>
+                        MENGENAL <b>PT KAP</b>
+                    </h2>
+
+                    <p>
+                        
+                    </p>
+
+                </div>
+
+
+                <div class="about-container">
+
+
+                    <div class="about-image">
+
+                        <img src="maskot.png"
+                            alt="Maskot Kereta Api Pratama">
+
+                        <div class="about-image-label">
+                            <strong>CIMAKA</strong>
+                            <span>Mascot KAP</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-content">
+
+                        <span class="about-label">
+                           
+                        </span>
+
+                        <h3>
+                            YOUR SAFETY IS
+                            <b>OUR PRIORITY</b>
+                        </h3>
+
+                        <p>
+                            PT Kereta Api Pratama (KAP) merupakan perusahaan transportasi kereta api yang hadir dengan konsep pelayanan perjalanan modern nyaman dan terpercaya. KAP dirancang untuk memberikan kemudahan bagi masyarakat dalam merencanakan perjalanan melalui layanan informasi jadwal, pemilihan kursi, dan pemesanan tiket berbasis digital.
+                        </p>
+
+                        <p>
+                           Dengan mengutamakan kenyamanan dan kemudahan pelanggan, KAP berkomitmen menghadirkan pengalaman perjalanan yang praktis melalui pemanfaatan teknologi dan pelayanan yang berorientasi pada kebutuhan penumpang.
+                        </p>
+
+
+                        <div class="about-values">
+
+                            <div class="value-card">
+
+                                <span>01</span>
+
+                                <h4>Visi</h4>
+
+                                <p>
+                                    Menghadirkan pengalaman pemesanan
+                                    perjalanan yang mudah dan nyaman.
+                                </p>
+
+                            </div>
+
+
+                            <div class="value-card">
+
+                                <span>02</span>
+
+                                <h4>Misi</h4>
+
+                                <p>
+                                    Mengembangkan layanan digital
+                                    yang informatif, praktis,
+                                    dan mudah digunakan.
+                                </p>
+
+                            </div>
+
+
+                            <div class="value-card">
+
+                                <span>03</span>
+
+                                <h4>Nilai Kami</h4>
+
+                                <p>
+                                    Kenyamanan, kemudahan,
+                                    pelayanan, dan kepercayaan.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+
+        <!-- =====================================
+             FOOTER
+        ====================================== -->
+
+        <footer class="footer">
+
+            <div class="footer-container">
+
+
+                <div class="footer-brand">
+
+                    <div class="footer-logo">
+
+                        <img src="kap.png"
+                            alt="Logo KAP">
+
+                        <div>
+                            <strong>PT KAP</strong>
+                            <span>KERETA API PRATAMA</span>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Your Safety is Our Priority
+                        Temukan pengalaman perjalanan digital
+                        bersama KAP
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h4>Navigasi</h4>
+
+                    <a href="#home">Beranda</a>
+                    <a href="#booking">Pesan Tiket</a>
+                    <a href="#routes">Rute Kereta</a>
+                    <a href="#gallery">Galeri</a>
+                    <a href="#about">Tentang Kami</a>
+
+                </div>
+
+
+                <div class="footer-contact">
+
+                    <h4>Informasi</h4>
+
+                    <p>PT KAP</p>
+                    <p>Satu jiwo satu nyali</p>
+                    <p>Developed by Yogi Pratama</p>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 KAP — Kereta Api Pratama
+                    All Rights Reserved
+                </p>
+
+                <span>
+                    Designed & Developed by Yogi Pratama
+                </span>
+
+            </div>
+
+
+            <div class="footer-disclaimer">
+
+               
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="routes.js"></script>
+
+    <script src="schedules.js"></script>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script src="booking.js"></script>
+
+    <script src="gallery.js"></script>
+
+    <script src="about.js"></script>
+
+
+</body>
+</html>
